@@ -1,0 +1,17 @@
+--These commands provide a brief example of full-text search in PostgreSQL
+--SQL in pgAdmin
+CREATE DATABASE nielsen;
+CREATE TABLE full_text_example (triple text);
+--psql to read in text data
+\copy full_text_example FROM C:/Users/witho/DATA-FOR-IMPORT/triples_text.csv DELIMITER ',' CSV 
+
+--BACK to SQL in pgAdmin
+SELECT * FROM full_text_example
+LIMIT 10;
+
+SELECT to_tsvector(triple) @@ to_tsquery('Maru/Matchbox')
+FROM full_text_example;
+
+SELECT triple
+FROM full_text_example
+WHERE to_tsvector(triple) @@ to_tsquery('Maru/Matchbox');
