@@ -2,17 +2,17 @@
 
 ## Basic Nodes
 
--   **company**: includes subsidiaries and divisions, could be a competitor, could be customer in B2B, could be for-profit, nonprofit, or governmental organization, likely to have an extensive attribute list, brand name
--   **industry**: generic group or subgroup of companies
--   **person**: could be a customer in B2C, reviewer or employee of company or product
--   **group**: generic group of people
--   **product**: includes product category/group
+-   **Company**: includes subsidiaries and divisions, could be a competitor, could be customer in B2B, could be for-profit, nonprofit, or governmental organization, likely to have an extensive attribute list, brand name
+-   **Industry**: generic group or subgroup of companies
+-   **Person**: could be a customer in B2C, reviewer or employee of company or product
+-   **Group**: generic group of people
+-   **Product**: includes product category/group
 
 ## Reference Nodes (point to relational tables)
 
--   **article**: general information in a relational table with article name, keywords for search, and JSON text [original data in a JSON lines (jl) file]
--   **review**: evaluation in a relational table with person name, product or company name, keywords for search, and JSON text [original data in a JSON lines (jl) file]
--   **data**: relational table with text strings and/or numbers in rows and columns, can be a menu of items or bill of materials [original data in a comma-delimited text (csv) file]
+-   **Article**: general information in a relational table with article name, keywords for search, and JSON text [original data in a JSON lines (jl) file]
+-   **Review**: evaluation in a relational table with person name, product or company name, keywords for search, and JSON text [original data in a JSON lines (jl) file]
+-   **Data**: relational table with text strings and/or numbers in rows and columns, can be a menu of items or bill of materials [original data in a comma-delimited text (csv) file]
 
 ## Edges/Relations
 
